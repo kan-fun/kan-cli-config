@@ -11,15 +11,15 @@ import (
 
 var configFilePath string
 
-func init()  {
+func init() {
 	homeDir, err := os.UserHomeDir()
 	if err != nil {
 		panic(err)
 	}
 
-	configFilePath = path.Join(homeDir,".kanrc.yml")
+	configFilePath = path.Join(homeDir, ".kanrc.yml")
 	if _, err := os.Stat(configFilePath); err == nil {
-		
+
 	} else if os.IsNotExist(err) {
 		file, err := os.Create(configFilePath)
 		if err != nil {
