@@ -36,8 +36,6 @@ func Init(configFilePath string) *cli.Command {
 				panic(err)
 			}
 
-			fmt.Println("AK:", accessKey)
-			fmt.Println("SK:", secretKey)
 			return nil
 		},
 	}
