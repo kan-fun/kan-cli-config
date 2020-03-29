@@ -1,1 +1,1 @@
-[![](https://goreportcard.com/badge/github.com/kan-fun/kan-cli)](https://goreportcard.com/report/github.com/kan-fun/kan-cli)
+[![](https://goreportcard.com/badge/github.com/kan-fun/kan-cli-config)](https://goreportcard.com/report/github.com/kan-fun/kan-cli-config)
