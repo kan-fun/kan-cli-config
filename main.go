@@ -33,8 +33,8 @@ func init() {
 
 func main() {
 	app := &cli.App{
-		Name: "kan-config",
-		Usage: "make configuration for kan cli",
+		Name:     "kan-config",
+		Usage:    "make configuration for kan cli",
 		HelpName: "kan-config",
 	}
 	app.UseShortOptionHandling = true
