@@ -1,8 +1,6 @@
 package cmd
 
 import (
-	"fmt"
-
 	"github.com/spf13/viper"
 	"github.com/urfave/cli/v2"
 )

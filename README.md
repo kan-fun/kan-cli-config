@@ -1,1 +1,2 @@
+[![Actions Status](https://github.com/kan-fun/kan-cli-config/workflows/Go/badge.svg)](https://github.com/kan-fun/kan-cli-config/actions)
 [![](https://goreportcard.com/badge/github.com/kan-fun/kan-cli-config)](https://goreportcard.com/report/github.com/kan-fun/kan-cli-config)
