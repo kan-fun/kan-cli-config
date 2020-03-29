@@ -1,4 +1,4 @@
-module kan-cli
+module kan-cli-config
 
 go 1.14
 
