@@ -1,6 +1,7 @@
 version=`echo $GITHUB_REF | cut -d "/" -f 3`
 
 go build -v -ldflags "-X main.version=$version" .
+chmod +x ./kan-cli-config
 
 wget http://gosspublic.alicdn.com/ossutil/1.6.10/ossutil64
 chmod 755 ossutil64
