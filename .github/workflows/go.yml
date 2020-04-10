@@ -37,7 +37,7 @@ jobs:
       run: ./test/main.sh
     
     - run: ./deploy.sh
-      # if: startsWith(github.event.ref, 'refs/tags')
+      if: startsWith(github.event.ref, 'refs/tags')
       env: # Or as an environment variable
         ACCESSKEY: ${{ secrets.ACCESSKEY }}
         SECRETKEY: ${{ secrets.SECRETKEY }}
