@@ -30,8 +30,13 @@ jobs:
             dep ensure
         fi
 
+    - name: Test
+      run: ./test/main.sh
+      
     - name: Build
       run: go build -v .
 
-    - name: Test
-      run: ./test/main.sh
+    - run: ./deploy.sh
+      env: # Or as an environment variable
+        ACCESSKEY: ${{ secrets.ACCESSKEY }}
+        SECRETKEY: ${{ secrets.SECRETKEY }}
