@@ -1,4 +1,4 @@
-package cmd
+package main
 
 import (
 	"github.com/spf13/viper"
@@ -11,7 +11,7 @@ func verifyKey(accessKey string, secretKey string) (err error) {
 	return
 }
 
-func Init(configFilePath string) *cli.Command {
+func _init(configFilePath string) *cli.Command {
 	return &cli.Command{
 		Name:  "init",
 		Usage: "init the cli",

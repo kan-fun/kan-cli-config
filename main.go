@@ -6,10 +6,10 @@ import (
 	"path"
 
 	"github.com/urfave/cli/v2"
-	"kan-cli-config/cmd"
 )
 
 var configFilePath string
+var version string
 
 func init() {
 	homeDir, err := os.UserHomeDir()
@@ -36,13 +36,14 @@ func main() {
 		Name:     "kan-config",
 		Usage:    "make configuration for kan cli",
 		HelpName: "kan-config",
+		Version:  version,
 	}
 	app.UseShortOptionHandling = true
 	/*
 		kan-config init --access-key 123 --secret-key 456
 	*/
 	app.Commands = []*cli.Command{
-		cmd.Init(configFilePath),
+		_init(configFilePath),
 	}
 
 	err := app.Run(os.Args)
