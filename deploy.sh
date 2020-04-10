@@ -5,4 +5,5 @@
 # ./ossutil64 cp -f ./kan-cli-config oss://kan-bin/linux/kan-config_0.0.1
 
 echo 123
+echo 456
 echo $GITHUB_REF
